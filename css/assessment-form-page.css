@@ -1,0 +1,52 @@
+.assessment-form-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    width: 80%;
+    margin: 50px auto 50px auto;
+    /* margin-top: 50px !important; */
+    /* min-width:1000px; */
+  }
+  
+  .assessment-form-main-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 22px;
+  }
+
+  .item2-image{
+    background: antiquewhite;
+    height: fit-content;
+    /* align-self: center; */
+  }
+
+  .assessment-image{
+    width: 100%;
+    max-width: 1000px;
+    max-height: 1000px;
+    height: max-content;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .assessment-form-main-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+  }
+
+  /* input:required {
+  border-color: red !important;
+  font-size: 20px;
+} */
+
+
+.name_field:invalid {
+  border-color: red !important;
+}
+
+input:optional {
+  border-color: gray !important;
+}

@@ -1,0 +1,183 @@
+
+.success-stories-container-outer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    /* background-color: #80f321; */
+    padding: 10px;
+    width: 80%;
+    margin: 50px auto 50px auto;
+  }
+.success-container-1{
+    margin-top: 110px;
+    background-color: antiquewhite;
+    width: min-content;
+    border-radius: 20px;
+    scroll-snap-align: end;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.success-stories-container {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background-color: #EFECEC;
+    padding: 10px;
+    width: 100%;
+    margin: auto auto auto auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    
+  }
+  
+  .outer {
+    font-size: 12px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 275px;
+    height: 550px; */
+    width: fit-content;
+    height: fit-content;
+    /* background: linear-gradient(Navy 33.33%, Tomato 66.66%, Skyblue 100%); */
+    box-shadow: 0 15px 15px #eee;
+  }
+  
+  .outer > span {color:#fff}
+  
+  .outer > .inner {
+    border-radius: 20px !important;
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    /* padding-top: 20px; */
+    padding-top: 60px;
+    padding-bottom: 22px;
+    width: 300px;
+    height: 310px;
+    /* height: fit-content; */
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 10px #000;
+    grid-row-gap: 10px;
+  }
+  
+  .outer > .inner > #user {
+    /* display: block; */
+    display: grid;
+    margin: auto;
+    position: absolute;
+    /* position: relative; */
+    top: -100px;
+    left: 0;
+    right:0;
+    width: 150px;
+    height: 150px;
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    background: #3a96f1;
+    box-shadow: 0 0 0 20px #efecec;
+  }
+  
+  .outer > .inner > input[type=text],
+  .outer > .inner > #sign_in {
+    width: 80%;
+    padding: 5px;
+  }
+  
+  .outer > .inner > #sign_in {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    background: Tomato;
+    box-shadow: 0 5px 5px #000;
+  }
+
+  .description-padding-success {
+    width:86%;
+    margin:auto;
+    padding: 26px 0 13px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .success-stories-container-outer {
+        width: 100%;
+    }
+    .success-stories-container{
+        width: 98% !important;
+    }
+    .success-container-1 {
+        margin-left:4px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+    .outer {
+        font-size: 14px !important;
+    }
+    .outer > .inner {
+        width: 300px !important;
+        padding-bottom: 20px !important;
+        grid-row-gap: 2px !important;
+        padding-top: 15px !important;
+    }
+
+    .outer > .inner > #user{
+        width: 120px !important;
+        height: 120px !important;
+        top: -60px !important;
+    }
+    .description-padding-success {
+        padding: 70px 0 10px 0;
+      }
+      ::-webkit-scrollbar-track {
+        display: none;
+      }
+      .custom-button-styling-2 {
+        width: 50% !important;
+        height: 40px !important;
+        font-size: 16px !important;
+        margin: 20px auto 20px auto !important;
+    }
+
+  }
+
+
+  
+.custom-button-styling-2 {
+    font-size: 24px;
+    height: 50px;
+    width: 20%;
+    /* margin: auto !important; */
+    margin: 20px auto 20px auto;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border: 0;
+    background: #1A5ABA;
+    color: #fff;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+.custom-button-styling-2:hover {
+  background-color: #fbc821;
+  color: #1A5ABA;
+  font-weight: 600;
+
+}

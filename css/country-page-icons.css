@@ -1,0 +1,136 @@
+@media only screen and (min-width: 1049px) {
+    .country-icons-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        /* grid-gap: 10px; */
+        /* background-color: #2196F3; */
+        padding: 10px;
+        /* width: 72%; */
+        max-width: 1000px;
+        margin: auto;
+    
+    }
+
+    .country-icons-grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        /* padding: 20px 0; */
+        font-size: 30px;
+    }
+
+    .country-icons-grid-container-mobile {
+        display: none !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 1049px) {
+
+    .country-icons-grid-container-mobile {
+        /* grid-template-columns: auto !important; */
+        width: 100% !important;
+        /* padding: 0px !important; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        /* background-color: #2196F3; */
+        padding: 10px;
+        /* width: 72%; */
+        /* max-width: 1000px; */
+        margin: auto;
+        font-size: 16px;
+    }
+
+    .country-icons-grid-container-mobile>div {
+        /* background-color: rgba(24, 126, 173, 0.8); */
+        text-align: center;
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .country-icons-grid-container {
+        display: none;
+    }
+
+    .page-3-icon-styling {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    .canada-page-us-grid {
+        width: 100% !important;
+        padding: 20px !important;
+        grid-gap: 20px !important;
+    }
+
+    .icon__value {
+        max-width: 45px;
+    }
+
+    .arrow-icon-2 {
+        transform: rotate(90deg);
+        background-color: brown;
+        height: min-content;
+        align-self: center;
+    }
+
+    .arrow-icon-2 {
+        transform: rotate(180deg);
+        background-color: brown;
+        height: min-content;
+        align-self: center;
+    }
+
+    .item1-arrow {
+        height: min-content;
+        padding-top: 0px;
+        align-self: center;
+    }
+
+}
+
+.page-3-icon-styling {
+    /* border: solid;
+    border-radius: 100px;
+    height: 160px; */
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 8px solid #f9ca2d;
+    color: white;
+    padding: 0.25em;
+
+
+    /* Center the text contents */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+}
+
+.icon__value {
+    /* Set the height to 0 and overflow to visible to not interfere with the square styles */
+    overflow: visible;
+    /* height: 0; */
+
+    /* Vertically center text since we set its height to 0 */
+    /* margin-top: -1em; */
+}
+
+.icon:after {
+    margin: auto;
+    content: '';
+    display: block;
+
+    /* Ensure the element is a square */
+    /* height: 0; */
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+
+.item1-arrow {
+    height: min-content;
+    padding: 70px 0px;
+}

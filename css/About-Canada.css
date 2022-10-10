@@ -1,0 +1,71 @@
+
+.canada-page-us-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    /* background-color: #2196F3; */
+    padding: 80px;
+    width: 100%;
+    margin: auto;
+}
+
+.canada-page-us-grid>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .business-immigration-country {
+
+        grid-template-columns: 1fr !important;
+    }
+
+    .businessImmigrationContainer {
+        width: 100% !important;
+    }
+
+    .form-control {
+        font-size: 1.4rem !important;
+    }
+}
+
+.business-immigration-country {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    max-width: 1800px;
+    margin: auto;
+}
+
+.business-immigration-country>div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.businessImmigrationCoun {
+    grid-gap: 30px;
+    display: grid;
+}
+
+.businessImmigrationContainer {
+    height: fit-content;
+    /* background: #d7a4a4ed !important; */
+    width: 90%;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 600px) and (max-width:1049px) {
+    .business-immigration-country {
+        display: grid;
+        grid-template-columns: 1fr !important;
+  }
+}
