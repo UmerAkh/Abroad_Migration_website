@@ -132,10 +132,10 @@
         $mail->SMTPDebug = false;  
     
         $mail->IsHTML(false);
-        $mail->AddAddress($recipientNameEmail, "recipient-name");
+        $mail->AddAddress($recipientNameEmail, "Abroad Migration Info");
         $mail->SetFrom($emailFrom, "Abroad Migration");
         $mail->AddReplyTo($emailFrom, "Abroad Migration");
-        $mail->AddCC($emailFrom, "cc-recipient-name");
+        $mail->AddCC($emailFrom, "From Abroad Migration Website");
         $mail->Subject = "Message from ".$names;
         $content = 'Hello,<br><br> <b>Message received from '.$names.'</b><br><br>'
         .'Name: '.$names.'<br>'

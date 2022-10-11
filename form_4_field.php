@@ -107,13 +107,12 @@
         $mail->Username   = $emailUsername;
         $mail->Password   = $emailPassword;
         $mail->SMTPDebug = false;  
-
-        // Info@abroadmigrationdc.com
+        
         $mail->IsHTML(false);
-        $mail->AddAddress($recipientNameEmail, "recipient-name");
+        $mail->AddAddress($recipientNameEmail, "Abroad Migration Info");
         $mail->SetFrom($emailFrom, "Abroad Migration");
         $mail->AddReplyTo($emailFrom, "Abroad Migration");
-        $mail->AddCC($emailFrom, "cc-recipient-name");
+        $mail->AddCC($emailFrom, "From Abroad Migration Website");
         $mail->Subject = $country." immigration Application Submitted by ".$names;
         $content = 'Hello,<br><br> <b>Immigration Application has been submitted  by '.$names.'</b><br><br>'
         .'Name: '.$names.'<br>'

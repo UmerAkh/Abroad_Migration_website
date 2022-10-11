@@ -164,20 +164,9 @@
                 </div>
             </div>
           
-            <!-- <button style="width:30px" onclick="scrollLeftbtn()">
-                    >
-            </button>
-
-            <button style="width:30px" onclick="scrollRightbtn()">
-                    <
-            </button> -->
-            <!-- <div> -->
                 <div class="arrow-left" onclick="scrollRightbtn()"> </div>
 
                 <div class="arrow-right" onclick="scrollLeftbtn()"> </div>
-
-            <!-- </div> -->
-
         </div>
         <div class="icon-container-grid">
             <div style= " display: inline-flex; gap: 30px; vertical-align: -webkit-baseline-middle; font-size: 12px; padding: 6px 0 6px 0;">

@@ -172,10 +172,10 @@ function sendDataToDB($names, $country, $immigration_type, $phone_number, $comme
         $mail->SMTPDebug = false;  
     
         $mail->IsHTML(false);
-        $mail->AddAddress($recipientNameEmail, "recipient-name");
+        $mail->AddAddress($recipientNameEmail, "Abroad Migration Info");
         $mail->SetFrom($emailFrom, "Abroad Migration");
         $mail->AddReplyTo($emailFrom, "Abroad Migration");
-        $mail->AddCC($emailFrom, "cc-recipient-name");
+        $mail->AddCC($emailFrom, "From Abroad Migration Website");
         $mail->Subject = "Assessment Requested by ".$names;
         $content = 'Hello,<br><br> <b>Assessment Request has been made by '.$names.'</b><br><br>'
         .'Name: '.$names.'<br>'

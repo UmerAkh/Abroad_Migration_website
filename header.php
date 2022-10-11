@@ -9,8 +9,6 @@
     <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-
-    <!-- <link rel = "stylesheet" href="css/style.css?1126598319"> -->
     <link rel = "stylesheet" href="css/header.css?1926518119">
 </head>
 <body>

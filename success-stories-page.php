@@ -1,5 +1,4 @@
 <link rel = "stylesheet" href="css/success-stories-page.css?1413885382" type="text/css"/>
-<!-- <link rel = "stylesheet" href="css/style.css?1412681489"> -->
 
 <?php
         $title = "Header";                   // (1) Set the title
@@ -100,55 +99,7 @@
             </div>
         </div>
     </div>
-    <!-- <div style="margin-top: 20px;">
-        <span class="font-size-mobile-txt-3-heading">Board of Directors</span>
-    </div> -->
-    <!-- <div class="success-stories-container">
-        <div class="success-container-1">
-            <div class="outer">
-                <div class="inner">
-                    <img src="images/visa-granted-2 (1).png" alt="User" id="user">
-                    <div class="description-padding-success"style="">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book. </div>
-                    <div style="width:80%; margin:auto; "><b>Name:</b> ABC John</div>
-                    <div style="width:80%; margin:auto; "><b>Role :</b> UK</div>
-                </div>
-                <span></span> 
-            </div>
-        </div>
-        <div class="success-container-1">
-            <div class="outer">
-                <div class="inner">
-                    <img src="images/visa-granted-2 (1).png" alt="User" id="user">
-                    <div class="description-padding-success"style="">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book. </div>
-                    <div style="width:80%; margin:auto; "><b>Name:</b> ABC John</div>
-                    <div style="width:80%; margin:auto; "><b>Role :</b> UK</div>
-                </div>
-                <span></span> 
-            </div>
-        </div>
-        <div class="success-container-1">
-            <div class="outer">
-                <div class="inner">
-                    <img src="images/visa-granted-2 (1).png" alt="User" id="user">
-                    <div class="description-padding-success"style="">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book. </div>
-                    <div style="width:80%; margin:auto; "><b>Name:</b> ABC John</div>
-                    <div style="width:80%; margin:auto; "><b>Role :</b> UK</div>
-                </div>
-                <span></span>
-            </div>
-        </div>
-    </div> -->
-
-
+   
 </div>
 <?php
         $title = "Footer";                   // (1) Set the title
