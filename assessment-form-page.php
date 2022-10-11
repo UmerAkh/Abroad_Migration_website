@@ -95,6 +95,9 @@ require './vendor/phpmailer/phpmailer/src/Exception.php';
 require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require './vendor/phpmailer/phpmailer/src/SMTP.php';
 
+
+
+
 $name = $email = $country = $immigrationType =
  $phoneNumber = $comment = "";
 
@@ -127,13 +130,12 @@ if(isset ($_POST['submit_assessment_form'])){
 }
 
 function sendDataToDB($names, $country, $immigration_type, $phone_number, $comment, $email){
+    include 'credential-email-mysql.php';
     $servername = "82.180.175.51";
-    $username = "u255565930_abroadmig";
-    $password = "MigrationAbroad@123";
     $db = "u255565930_Abroad_Mig_web";
     $dbconn = new PDO('mysql:host=82.180.175.51;dbname=u255565930_Abroad_Mig_web',
-    'u255565930_abroadmig',
-    'MigrationAbroad@123',
+    $username,
+    $password,
     array(PDO::ATTR_PERSISTENT => true));
 
     if($dbconn) {
@@ -155,6 +157,7 @@ function sendDataToDB($names, $country, $immigration_type, $phone_number, $comme
     }	
 
     function sendMail($names, $country, $immigration_type, $phone_number, $comment, $email){
+        include 'credential-email-mysql.php';
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->Mailer = "smtp";
@@ -162,17 +165,17 @@ function sendDataToDB($names, $country, $immigration_type, $phone_number, $comme
         $mail->SMTPDebug  = 1;  
         $mail->SMTPAuth   = TRUE;
         $mail->SMTPSecure = "tls";
-        $mail->Port       = 465;
-        $mail->Host       = "ssl://smtp.titan.email";
-        $mail->Username   = "Development@abroadmigrationdc.com";
-        $mail->Password   = "Test123";
+        $mail->Port       = $emailPort;
+        $mail->Host       = $emailHost;
+        $mail->Username   = $emailUsername;
+        $mail->Password   = $emailPassword;
         $mail->SMTPDebug = false;  
     
         $mail->IsHTML(false);
-        $mail->AddAddress("Umerakh96@gmail.com", "recipient-name");
-        $mail->SetFrom("Development@abroadmigrationdc.com", "Abroad Migration");
-        $mail->AddReplyTo("Development@abroadmigrationdc.com", "Abroad Migration");
-        $mail->AddCC("Development@abroadmigrationdc.com", "cc-recipient-name");
+        $mail->AddAddress($recipientNameEmail, "recipient-name");
+        $mail->SetFrom($emailFrom, "Abroad Migration");
+        $mail->AddReplyTo($emailFrom, "Abroad Migration");
+        $mail->AddCC($emailFrom, "cc-recipient-name");
         $mail->Subject = "Assessment Requested by ".$names;
         $content = 'Hello,<br><br> <b>Assessment Request has been made by '.$names.'</b><br><br>'
         .'Name: '.$names.'<br>'

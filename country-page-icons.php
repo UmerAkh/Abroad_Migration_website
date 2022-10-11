@@ -1,4 +1,4 @@
-<link rel = "stylesheet" href="css/country-page-icons.css?1471585175" type="text/css"/>
+<link rel = "stylesheet" href="css/country-page-icons.css?1471515175" type="text/css"/>
 <link rel = "stylesheet" href="css/style.css?1278617299">
 
 <div class="country-icons-grid-container">
