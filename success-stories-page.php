@@ -1,4 +1,6 @@
-<link rel = "stylesheet" href="css/success-stories-page.css?1413885382" type="text/css"/>
+<link rel = "stylesheet" href="css/success-stories-page.css?1413181382" type="text/css"/>
+<link rel="shortcut icon" href="icon/FAVICON.svg" type="image/svg+xml"/>
+
 
 <?php
         $title = "Header";                   // (1) Set the title
@@ -21,8 +23,8 @@
          few of our satisfied clients who took our services.
         </span>
 
-        <a href="tel:+971545990002">
-            <button class="custom-button-styling-2">
+        <a href="tel:+97144581018" class="hide-button">
+            <button class="custom-button-styling-2 ">
                 Call Us
             </button>
         </a>

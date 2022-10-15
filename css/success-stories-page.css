@@ -65,7 +65,7 @@
     padding-top: 60px;
     padding-bottom: 22px;
     width: 300px;
-    height: 310px;
+    height: 330px;
     /* height: fit-content; */
     border-radius: 5px;
     background: #fff;
@@ -114,6 +114,9 @@
   }
 
   @media only screen and (max-width: 600px) {
+    .hide-button{
+      display: contents !important;
+    }
     .success-stories-container-outer {
         width: 100%;
     }
@@ -130,6 +133,7 @@
     }
     .outer > .inner {
         width: 300px !important;
+        height: 330px !important;
         padding-bottom: 20px !important;
         grid-row-gap: 2px !important;
         padding-top: 15px !important;
@@ -180,4 +184,8 @@
   color: #1A5ABA;
   font-weight: 600;
 
+}
+
+.hide-button{
+  display: none;
 }

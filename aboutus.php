@@ -7,6 +7,8 @@
     <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel = "stylesheet" href="css/aboutus.css?1483185340">
+    <link rel="shortcut icon" href="icon/FAVICON.svg" type="image/svg+xml"/>
+
 </head>
 <body>
     <?php

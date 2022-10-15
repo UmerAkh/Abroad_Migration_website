@@ -9,7 +9,9 @@
     <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel = "stylesheet" href="css/header.css?1926518119">
+    <link rel = "stylesheet" href="css/header.css?1926218119">
+    <link rel="shortcut icon" href="icon/FAVICON.svg" type="image/svg+xml"/>
+
 </head>
 <body>
 <div class="grid-container-header">

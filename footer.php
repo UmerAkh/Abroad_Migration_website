@@ -1,8 +1,7 @@
 
 <head>
     <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <link rel = "stylesheet" href="css/style.css?1929191319">
+    <link rel = "stylesheet" href="css/style.css?1929196319">
     <link rel = "stylesheet" href="css/footer.css?1929118319">
 </head>
 <body>
@@ -28,11 +27,11 @@
                                 <b>QUICK LINKS</b>
                             </h4>
                             <br>
-                            <span class="font-size-mobile-txt-2 text-hover-page-link">Home</span>
-                            <span class="font-size-mobile-txt-2 text-hover-page-link">About Us</span>
-                            <span class="font-size-mobile-txt-2 text-hover-page-link">Assessment Form</span>
-                            <span class="font-size-mobile-txt-2 text-hover-page-link">Success Stories</span>
-                            <span class="font-size-mobile-txt-2 text-hover-page-link">Contact Us</span>
+                            <span class="font-size-mobile-txt-2 text-hover-page-link"><a href="/AbroadMigration/home.php">Home</a></span>
+                            <span class="font-size-mobile-txt-2 text-hover-page-link"><a href="/AbroadMigration/aboutus.php">About Us</a></span>
+                            <span class="font-size-mobile-txt-2 text-hover-page-link"><a href="/AbroadMigration/assessment-form-page.php">Assessment Form</a></span>
+                            <span class="font-size-mobile-txt-2 text-hover-page-link"><a href="/AbroadMigration/success-stories-page.php"> Success Stories</a></span>
+                            <span class="font-size-mobile-txt-2 text-hover-page-link"><a href="/AbroadMigration/contact-us.php">Contact Us</a></span>
                         </div>
                         <div class="footer3-b">
                             <div style="padding: 30px 0 30px 0;">
@@ -65,11 +64,11 @@
                             <br>
                             <div class="get-in-touch-mini">
                                 <img src="icon/office-block-svgrepo-com 1.svg" width="40px" height="40px" alt="First slide">
-                                <span class="font-size-mobile-txt-2" style="display: grid;"> <b>UAE Office</b>Business bay, Dubai 04 4581018 Citadel Tower 206</span>
+                                <span class="font-size-mobile-txt-2" style="display: grid;"> <b>UAE Office</b>206 The Citadel Tower Business bay Dubai</span>
                             </div>
                             <div class="get-in-touch-mini">
                                 <img src="icon/office-phone-svgrepo-com 1.svg" width="40px" height="40px" alt="First slide">
-                                <span class="font-size-mobile-txt-2"><b>Landline: </b> +971 54 5990002</span>
+                                <span class="font-size-mobile-txt-2"><b>Phone: </b> +971 44 581018</span>
                             </div>
                             <div class="get-in-touch-mini">
                                 <img src="icon/email-svgrepo-com 1.svg" width="40px" height="40px" alt="First slide">
@@ -77,17 +76,24 @@
                             </div>
                             <div class="get-in-touch-mini">
                                 <img src="icon/wall-clock-svgrepo-com 1.svg" width="40px" height="40px" alt="First slide">
-                                <span class="font-size-mobile-txt-2"> Mon-Sun / 9:00AM - 8:00PM GMT+4</span>
+                                <span class="font-size-mobile-txt-2"> Mon-Sun / 10:00AM - 6:00PM GMT+4</span>
                             </div>
                             
                         </div>
                         <div class="footer4-b">
                             <div class="social-media-icons">
-                                <img class="icon-container-icons-styling-2 bounce2" src="icon/facebook-icon.svg" width="60px" height="60px" alt="First slide">
-                                <img class="icon-container-icons-styling-2 bounce2" src="icon/insta-icon.svg" width="60px" height="60px" alt="First slide">
-                                <img class="icon-container-icons-styling-2 bounce2" src="icon/tiktok-icon 1.svg" width="60px" height="60px" alt="First slide">
-                                <img class="icon-container-icons-styling-2 bounce2" src="icon/twitter-icon.svg" width="60px" height="60px" alt="First slide">
-
+                                <a target="_blank" href="https://www.facebook.com/people/Abroad-Migration/100078942633260/">
+                                    <img class="icon-container-icons-styling-2 bounce2" src="icon/facebook-icon.svg" width="60px" height="60px">
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/abroadmigration2022/">
+                                    <img class="icon-container-icons-styling-2 bounce2" src="icon/insta-icon.svg" width="60px" height="60px">
+                                </a>
+                                <a target="_blank" href="https://www.tiktok.com/@abroadmigrationservices?_t=8VHqcvGtz1e&_r=1">
+                                    <img class="icon-container-icons-styling-2 bounce2" src="icon/tiktok-icon 1.svg" width="60px" height="60px">
+                                </a>
+                                <a target="_blank" href="https://www.tiktok.com/@abroadmigrationservices?_t=8VHqcvGtz1e&_r=1">
+                                    <img class="icon-container-icons-styling-2 bounce2" src="icon/twitter-icon.svg" width="60px" height="60px">
+                                </a> 
                             </div>
                         </div>
 
@@ -113,20 +119,15 @@ if(isset ($_POST['email-subscription'])){
 }
 
 function sendDataToDBEmail($email){
+    include 'credential-email-mysql.php';
     $servername = "82.180.175.51";
-    $username = "u255565930_abroadmig";
-    $password = "MigrationAbroad@123";
     $db = "u255565930_Abroad_Mig_web";
     $dbconn = new PDO('mysql:host=82.180.175.51;dbname=u255565930_Abroad_Mig_web',
-    'u255565930_abroadmig',
-    'MigrationAbroad@123',
+    $username,
+    $password,
     array(PDO::ATTR_PERSISTENT => true));
 
     if($dbconn) {
-        echo "Connection Successful";
-    }
-    else {
-        echo "Connection Failed";
     }
 
     try {	

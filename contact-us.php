@@ -1,5 +1,6 @@
 <link rel = "stylesheet" href="css/contact-us.css?1422515178" type="text/css"/>
 <link rel = "stylesheet" href="css/form_4_field.css?1421615378" type="text/css"/>
+<link rel="shortcut icon" href="icon/FAVICON.svg" type="image/svg+xml"/>
 
 <?php
         $title = "Header";                   // (1) Set the title
@@ -49,9 +50,9 @@
   <div class="office-info-styling at-container-2" style="">
         <div class="at-item-2">
             <h2 class="heading-styling-contact-us" style="text-align-last: center;"><b >ABU DHABI OFFICE</b></h2>
-            <p>Business bay, Dubai 04 4581018 </p>
-            <p>Citadel Tower 206</p>
-            <p>+971 54 559 0002</p>
+            <p>206 The Citadel Tower</p>
+            <p> Business bay Dubai</p>
+            <p>+971 44 581018</p>
             <p>Info@abroadmigrationdc.com</p>
         </div>
   </div>
@@ -118,13 +119,13 @@
     
     function sendMail($names, $phone_number, $comment, $email){
         include 'credential-email-mysql.php';
-        $mail = new PHPMailer();
+        $mail = new PHPMailer(true);
         $mail->IsSMTP();
         $mail->Mailer = "smtp";
     
         $mail->SMTPDebug  = 1;  
         $mail->SMTPAuth   = TRUE;
-        $mail->SMTPSecure = "tls";
+        $mail->SMTPSecure = 'tls';
         $mail->Port       = $emailPort;
         $mail->Host       = $emailHost;
         $mail->Username   = $emailUsername;
@@ -133,7 +134,7 @@
     
         $mail->IsHTML(false);
         $mail->AddAddress($recipientNameEmail, "Abroad Migration Info");
-        $mail->SetFrom($emailFrom, "Abroad Migration");
+        $mail->SetFrom("Website.Service@abroadmigrationdc.com", "Abroad Migration");
         $mail->AddReplyTo($emailFrom, "Abroad Migration");
         $mail->AddCC($emailFrom, "From Abroad Migration Website");
         $mail->Subject = "Message from ".$names;
@@ -145,6 +146,8 @@
         $mail->MsgHTML($content); 
             if(!$mail->Send()) {
                 // echo "Error while sending Email.";
+            //  var_dump($mail);
+            
             } 
     }
       

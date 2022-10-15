@@ -95,7 +95,7 @@
 
     function sendMail($names, $country, $phone_number, $comment, $email){
         include 'credential-email-mysql.php';
-        $mail = new PHPMailer();
+        $mail = new PHPMailer(true);
         $mail->IsSMTP();
         $mail->Mailer = "smtp";
 
@@ -110,7 +110,7 @@
         
         $mail->IsHTML(false);
         $mail->AddAddress($recipientNameEmail, "Abroad Migration Info");
-        $mail->SetFrom($emailFrom, "Abroad Migration");
+        $mail->SetFrom("Website.Service@abroadmigrationdc.com", "Abroad Migration");
         $mail->AddReplyTo($emailFrom, "Abroad Migration");
         $mail->AddCC($emailFrom, "From Abroad Migration Website");
         $mail->Subject = $country." immigration Application Submitted by ".$names;

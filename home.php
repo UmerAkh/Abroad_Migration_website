@@ -1,6 +1,9 @@
 
-<link rel = "stylesheet" href="css/style.css?1278968289">
-<link rel = "stylesheet" href="css/home.css?1178871299">
+<link rel = "stylesheet" href="css/style.css?1278268289">
+<link rel = "stylesheet" href="css/home.css?1171871299">
+<link rel="shortcut icon" href="icon/FAVICON.svg" type="image/svg+xml"/>
+
+
 <div class="grid-container">
         <div class="header-grid">
             <?php
@@ -46,7 +49,11 @@
                         </div>  
                         <div class="description-grid font-size-mobile-txt-country-card">
                         People moving to Poland can request the professional services our Abroad Migration provides.                        </div>
-                        <div class="learn-more-grid font-size-mobile-txt-country-card">LEARN MORE</div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <a href="/AbroadMigration/Poland.php">
+                                <span>LEARN MORE</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -74,7 +81,11 @@
                         </div>  
                         <div class="description-grid font-size-mobile-txt-country-card">
                             Get the services of Abroad Migration to go to the country of historic sites related to a succession of rulers.                        </div>
-                            <div class="learn-more-grid font-size-mobile-txt-country-card">LEARN MORE</div>
+                            <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <a href="/AbroadMigration/Malta.php">
+                                <span>LEARN MORE</span>
+                            </a>
+                            </div>
                         </div>
                 </div>
 
@@ -102,7 +113,11 @@
                         </div>  
                         <div class="description-grid font-size-mobile-txt-country-card">
                             Explore the rich culture of Portugal by opting for the services offered by Abroad Migration to secure a smooth visa procedure.                        </div>
-                        <div class="learn-more-grid font-size-mobile-txt-country-card">LEARN MORE</div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                        <a href="/AbroadMigration/Portugal.php">
+                                <span>LEARN MORE</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -131,7 +146,11 @@
                         <div class="description-grid font-size-mobile-txt-country-card">
                             The second-largest country by area is considered as the land of opportunities.
                         </div>
-                        <div class="learn-more-grid font-size-mobile-txt-country-card">LEARN MORE</div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                        <a href="/AbroadMigration/About-Canada.php">
+                                <span>LEARN MORE</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -159,9 +178,177 @@
                         </div>  
                         <div class="description-grid font-size-mobile-txt-country-card">
                             Acquire the services of Abroad Migration to land in the Czech Republic with ease.                        </div>
-                        <div class="learn-more-grid font-size-mobile-txt-country-card">LEARN MORE</div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                        <a href="/AbroadMigration/Czech-Republic.php">
+                                <span>LEARN MORE</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class = "flag-section">
+                    <div class="country-card-styling" style= "padding-right: 10px;">
+                        <div class="flag-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                FLY
+                            </span>
+                            <span>
+                                Ireland
+                            </span>
+                        </div>
+                        <div class="flag-tag font-size-mobile-txt-country-card">
+                        <img class="flag-size"src="images/Ireland_1_Icon.png" alt="First slide">
+
+                        </div>
+                        <div class="mini-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                VISA &
+                            </span>
+                            <span>
+                                IMMIGRATION 
+                            </span>
+                        </div>  
+                        <div class="description-grid font-size-mobile-txt-country-card">
+                            Explore the rich culture of Ireland by opting for the services offered by Abroad Migration to secure a smooth visa procedure.                        </div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <!-- <a href="/AbroadMigration/Portugal.php">
+                                <span>LEARN MORE</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div> 
+                <!-- //ireland -->
+
+                <div class = "flag-section">
+                    <div class="country-card-styling" style= "padding-right: 10px;">
+                        <div class="flag-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                FLY
+                            </span>
+                            <span>
+                                United Kingdom
+                            </span>
+                        </div>
+                        <div class="flag-tag font-size-mobile-txt-country-card">
+                        <img class="flag-size"src="images/UK 2 1.png" alt="First slide">
+
+                        </div>
+                        <div class="mini-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                VISA &
+                            </span>
+                            <span>
+                                IMMIGRATION 
+                            </span>
+                        </div>  
+                        <div class="description-grid font-size-mobile-txt-country-card">
+                        The UK visa application process depends a lot on the type of visa that you are applying for.
+                        </div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <!-- <a href="/AbroadMigration/About-Canada.php">
+                                <span>LEARN MORE</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- UK -->
+                <div class = "flag-section">
+                    <div class="country-card-styling" style= "padding-right: 10px;">
+                        <div class="flag-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                FLY
+                            </span>
+                            <span>
+                                Spain
+                            </span>
+                        </div>
+                        <div class="flag-tag font-size-mobile-txt-country-card">
+                        <img class="flag-size"src="images/Spain 1.png" alt="First slide">
+
+                        </div>
+                        <div class="mini-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                VISA &
+                            </span>
+                            <span>
+                                IMMIGRATION 
+                            </span>
+                        </div>  
+                        <div class="description-grid font-size-mobile-txt-country-card">
+                            Acquire the services of Abroad Migration to land in the Spain with ease.                        </div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <!-- <a href="/AbroadMigration/Czech-Republic.php">
+                                <span>LEARN MORE</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Spain -->
+                <div class = "flag-section">
+                    <div class="country-card-styling" style= "padding-right: 10px;">
+                        <div class="flag-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                FLY
+                            </span>
+                            <span>
+                                Italy
+                            </span>
+                        </div>
+                        <div class="flag-tag font-size-mobile-txt-country-card">
+                        <img class="flag-size"src="images/portugal.png" alt="First slide">
+
+                        </div>
+                        <div class="mini-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                VISA &
+                            </span>
+                            <span>
+                                IMMIGRATION 
+                            </span>
+                        </div>  
+                        <div class="description-grid font-size-mobile-txt-country-card">
+                            Explore the rich culture of Italy by opting for the services offered by Abroad Migration to secure a smooth visa procedure.                        </div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <!-- <a href="/AbroadMigration/Italy 1.png">
+                                <span>LEARN MORE</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Italy -->
+                <div class = "flag-section">
+                    <div class="country-card-styling" style= "padding-right: 10px;">
+                        <div class="flag-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                FLY
+                            </span>
+                            <span>
+                                Germany
+                            </span>
+                        </div>
+                        <div class="flag-tag font-size-mobile-txt-country-card">
+                        <img class="flag-size"src="images/Germany 1.png" alt="First slide">
+
+                        </div>
+                        <div class="mini-heading-grid font-size-mobile-txt-country-card">
+                            <span>
+                                VISA &
+                            </span>
+                            <span>
+                                IMMIGRATION 
+                            </span>
+                        </div>  
+                        <div class="description-grid font-size-mobile-txt-country-card">
+                            Germany is a Western European country by area is considered as the land of opportunities.
+                        </div>
+                        <div class="learn-more-grid font-size-mobile-txt-country-card">
+                            <!-- <a href="/AbroadMigration/About-Canada.php">
+                                <span>LEARN MORE</span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Germany -->
             </div>
           
                 <div class="arrow-left" onclick="scrollRightbtn()"> </div>
@@ -197,7 +384,7 @@
             </div>
         </div>
         <div class="description-container-1-grid">
-            <div class="container-1-grid-inner">
+            <!-- <div class="container-1-grid-inner">
                 <img class="containerOneImage"src='images/Image collage.png' width="600px" height="400px" alt=''>
                 <div class="containerOneText">
                     <p></p>
@@ -206,7 +393,7 @@
 
                 </div>
                     
-            </div>
+            </div> -->
         </div>
         <div class="description-container-2-grid">
         <div class="container-1-grid-inner">
@@ -316,38 +503,15 @@
     </div>
 
     <script>
-    let testBool = false;
-
     function scrollLeftbtn() {
-        // document.getElementById("widgetsContent").element.scrollLeft += 450;
         const element = document.getElementById("widgetsContent");
         element.scrollLeft += 450;
         console.log('scroll left');
-        // console.log("fuck you");
-        //     document.getElementById("carouselExampleIndicators").style="display:none";
-        // this.widgetsContent.nativeElement.scrollRight -= 150;
     }
 
     function scrollRightbtn() {
-        // document.getElementById("widgetsContent").element.scrollRight += 450;
         const element = document.getElementById("widgetsContent");
         element.scrollLeft -= 450;
-        console.log('scroll right');
-        // console.log("fuck you");
-        //     document.getElementById("carouselExampleIndicators").style="display:none";
-        // this.widgetsContent.nativeElement.scrollRight -= 150;
     }
 
-    function openNav() {
-        document.getElementById("widgetsContent").element.scrollRight;
-            console.log('opneNav');
-            testBool = testBool;
-            //   document.getElementById("Test123").style.width = "250px";
-            console.log(testBool);
-            if(testBool) {
-                document.getElementById("carouselExampleIndicators").style="display:none";
-            } else {
-                document.getElementById("carouselExampleIndicators").style="block!important";
-            }
-        }
 </script>

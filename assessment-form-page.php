@@ -1,5 +1,7 @@
 <link rel = "stylesheet" href="css/assessment-form-page.css?1452283378" type="text/css"/>
 <link rel = "stylesheet" href="css/form_4_field.css?1422512478" type="text/css"/>
+<link rel="shortcut icon" href="/FAVICON.svg" type="image/svg+xml"/>
+
 <!-- <link rel = "stylesheet" href="css/style.css?1422585378"> -->
 
 <?php
@@ -33,12 +35,16 @@
                 <img class="icon__value form-icon" src="icon/Country_Icon_assessment.svg" alt="First slide">
                 <select required style="font-size: 1.4rem;" class="custom-select form-text-field" id="country_field" name="country_field">
                     <option selected>Select Country</option>
-                    <option value="canada">Canada</option>
-                    <option value="poland">Poland</option>
-                    <option value="malta">Malta</option>
-                    <option value="portugal">Portugal</option>
-                    <option value="czech republic" >Czech Republic</option>
-                    <option value="australia" disabled>Australia (soon)</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Ireland" >Ireland</option>
+                    <option value="United Kingdom" >United Kingdom</option>
+                    <option value="Spain" >Spain</option>
+                    <option value="Italy" >Italy</option>
+                    <option value="Germany" >Germany</option>
+                    <option value="Australia" disabled>Australia (soon)</option>
                 </select>
             </div>
             <div class="input-group">
@@ -158,7 +164,7 @@ function sendDataToDB($names, $country, $immigration_type, $phone_number, $comme
 
     function sendMail($names, $country, $immigration_type, $phone_number, $comment, $email){
         include 'credential-email-mysql.php';
-        $mail = new PHPMailer();
+        $mail = new PHPMailer(true);
         $mail->IsSMTP();
         $mail->Mailer = "smtp";
     
@@ -173,7 +179,7 @@ function sendDataToDB($names, $country, $immigration_type, $phone_number, $comme
     
         $mail->IsHTML(false);
         $mail->AddAddress($recipientNameEmail, "Abroad Migration Info");
-        $mail->SetFrom($emailFrom, "Abroad Migration");
+        $mail->SetFrom("Website.Service@abroadmigrationdc.com", "Abroad Migration");
         $mail->AddReplyTo($emailFrom, "Abroad Migration");
         $mail->AddCC($emailFrom, "From Abroad Migration Website");
         $mail->Subject = "Assessment Requested by ".$names;
